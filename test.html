@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+#item2{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+#item4{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+#item6{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+#item8{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+#item10{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+#item11{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#item12{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=reset] {
+  width: 100%;
+  background-color: #af544c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=reset]:hover {
+  background-color: #af544c;
+}
+div {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+</style>        
+</head>
+<body>
+<div id="register-form">
+        
+<form action="employee.do">
+<div class="grid-container">
+    <div class="grid-item" id="item1">사원번호</div>
+    <div class="grid-item" id="item2"><input type="text" ></div>
+    <div class="grid-item" id="item3">이 름</div>
+    <div class="grid-item" id="item4"><input type="text"></div>
+    <div class="grid-item" id="item5">매니저</div>
+    <div class="grid-item" id="item6"><input type="text"></div>
+    <div class="grid-item" id="item7">생년월일</div>
+    <div class="grid-item" id="item8"><input type="text"></div>
+    <div class="grid-item" id="item9">상 세</div>
+    <div class="grid-item" id="item10"><input type="text"></div>
+    <div class="grid-item" id="item11"><input type="submit" value='확 인'></div>
+    <div class="grid-item" id="item12"><input type="reset" value='취 소'> </div>
+</div>
+</form>
+</div>
+</body>
+</html>

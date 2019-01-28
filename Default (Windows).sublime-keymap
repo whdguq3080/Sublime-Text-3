@@ -1,0 +1,10 @@
+[
+    { "keys": ["f12"],
+        "command": "side_bar_open_in_browser" ,
+        "args":{"paths":[], "type":"testing", "browser":"chrome"}    // 크롬 브라우저로 미리보기 설정
+    },
+    { "keys": ["alt+f12"],
+        "command": "side_bar_open_in_browser",
+        "args":{"paths":[], "type":"production", "browser":"Firefox"}    // 파이어폭스 브라우저로 미리보기 설정
+    },
+]
